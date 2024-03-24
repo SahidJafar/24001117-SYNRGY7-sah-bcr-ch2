@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/assets/styles/output.css" rel="stylesheet">
+    <title>Challange Chapter 2</title>
+</head>
+<body>
+<!-- Header -->
+<header>
+<!-- Header Nav -->
+<nav class="start-0 top-0 z-20 flex w-full justify-center bg-[#f1f3ff]">
+  <div class="container md:w-3/4 w-11/12">
+    <div class="my-8 flex h-9 items-center justify-between py-4">
+      <div class="bg-[#0d28a6] h-9 w-[100px]"></div>
+      <div
+        class="hidden items-center space-x-0 md:flex md:space-x-4 lg:space-x-8"
+      >
+        <ul class="flex space-x-0 md:space-x-4 lg:space-x-8">
+          <li>
+            <a href="#our-services" class="">Our Services</a>
+          </li>
+          <li>
+            <a href="#why-us" class="">Why Us</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="">Testimonial</a>
+          </li>
+          <li>
+            <a href="#faq" class="">FAQ</a>
+          </li>
+        </ul>
+        <button type="button">
+          <div class="bg-[#5cb85f] rounded-md px-3 py-2 text-white">
+            Register
+          </div>
+        </button>
+      </div>
+      <button onclick="toggleMenu()" type="button" class="block md:hidden">
+        <i data-feather="menu" class="text-sm font-bold"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Menu Mobile -->
+<menu id="menu" class="fixed inset-0 z-50 hidden h-full w-full">
+  <div
+    class="absolute inset-y-0 left-0 w-1/2 bg-black text-white opacity-60"
+  ></div>
+  <div class="absolute inset-y-0 right-0 w-1/2 bg-white">
+    <div class="m-8 flex items-start justify-between">
+      <div class="space-y-4">
+        <h1 class="text-sm font-bold">BCR</h1>
+        <ul class="space-y-4">
+          <li>
+            <a href="#our-services" class="">Our Services</a>
+          </li>
+          <li>
+            <a href="#why-us" class="">Why Us</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="">Testimonial</a>
+          </li>
+          <li>
+            <a href="#faq" class="">FAQ</a>
+          </li>
+        </ul>
+        <button type="button">
+          <div class="bg-[#5cb85f] rounded-sm px-3 py-2 text-white">
+            Register
+          </div>
+        </button>
+      </div>
+      <button onclick="toggleMenu()" type="button" class="block md:hidden">
+        <i data-feather="x" class="text-sm font-bold"></i>
+      </button>
+    </div>
+  </div>
+</menu>
+</header>
+<!-- /Header -->
+
+<!-- Main Section -->
+<section id="main" class="py-5 bg-[#f1f3ff]">
+  <div class="container  flex flex-wrap items-center ml-auto mt-10 md:pl-12">
+    <div class="mb-4 lg:mb-0 lg:w-1/2">
+      <h1 class="lg:max-w-xl text-4xl leading-[54px] font-bold sm:max-w-lg mb-5">
+        Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+      </h1>
+      <p class="lg:max-w-lg font-light text-[14px] sm:max-w-lg leading-5">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+      <div class="flex  mt-5 lg:justify-start">
+        <button type="button" class="bg-[#5cb85f] rounded-sm px-3 py-2 text-white">
+          Mulai Sewa Mobil
+        </button>
+      </div>
+    </div>
+    <div class="lg:w-1/2">
+      <img src="./src/assets/img/img_car.png" alt="Car" class="ml-auto mt-0" />
+    </div>
+  </div>
+</section>
+<!-- /Main Section -->
+
+<!-- Our Section -->
+<section id="our" class="py-5">
+</section>
+<!-- /Our Section -->
+
+<!-- Why Us Section -->
+<section id="why">
+</section>
+<!-- /Why Us Section -->
+
+<!-- Testimonial Section -->
+<section id="testimonial">
+
+</section>
+<!-- /Testimonial Section -->
+
+<!-- Getting Started Section -->
+<section id="getting-started">
+
+</section>
+<!-- /Getting Started Section -->
+
+<!-- Faq Section -->
+<section id="faq">
+
+</section>
+<!-- /Faq Section -->
+
+<!-- Footer Section -->
+<footer>
+
+</footer>
+<!-- /Footer Section -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Menu -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+
+</body>
+
+</html>
