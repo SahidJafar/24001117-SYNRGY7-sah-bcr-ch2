@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/assets/styles/output.css" rel="stylesheet">
     <title>Challange Chapter 2</title>
+
+    <!-- Slick Carrousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
 <!-- Header -->
@@ -84,7 +88,7 @@
 
 <!-- Main Section -->
 <section id="main" class="py-5 bg-[#f1f3ff]">
-  <div class="container  flex flex-wrap items-center ml-auto mt-10 md:pl-12">
+  <div class="container flex flex-wrap items-center ml-auto mt-10 md:pl-12">
     <div class="mb-4 lg:mb-0 lg:w-1/2">
       <h1 class="lg:max-w-xl text-4xl leading-[54px] font-bold sm:max-w-lg mb-5">
         Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
@@ -105,7 +109,7 @@
 
 <!-- Our Section -->
 <section id="our" class="py-10">
-  <div class="container  flex flex-wrap justify-center items-center mx-auto mt-10 md:px-12 md:flex-row">
+  <div class="container flex flex-wrap justify-center items-center mx-auto mt-10 md:px-12 md:flex-row">
     <div class="w-full lg:w-1/2 max-xl:px-12 mb-10">
       <img src="./src/assets/img/img_service.png" alt="Car" class="ml-auto mt-0" />
     </div>
@@ -218,18 +222,38 @@
 <!-- /Why Us Section -->
 
 <!-- Testimonial Section -->
-<section id="testimonial">
+<section id="testimonial" class="py-10">
+  <div class="container flex flex-col mx-auto px-12">
+    <div class="space-y-5 text-center">
+      <h1 class="font-bold text-2xl text-black">Testimonial</h1>
+      <p class="text-sm font-light text-black">
+        Berbagai review positif dari para pelanggan kami
+      </p>
+    </div>
+  </div>
+
 </section>
 <!-- /Testimonial Section -->
 
 <!-- Getting Started Section -->
-<section id="getting-started">
+<section id="getting-started" class="py-10">
+  <div class="flex h-full w-full justify-center items-center">
+    <div class="container md:w-3/4 w-11/12">
+      <div class="bg-[#0D28A6] min-h-[326px] rounded-xl space-y-8 py-16  flex flex-col items-center text-center">
+        <h1 class="text-4xl text-white font-bold">Sewa Mobil di (Lokasimu) Sekarang</h1>
+        <div class="text-center w-full flex justify-center ">
+          <p class="text-white text-sm w-[60%] font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <button class="bg-[#5CB85F] w-[140px] h-[36px] text-sm font-bold rounded-sm text-white px-3 py-2">Mulai Sewa Mobil</button>
+      </div>
+    </div>
+  </div>
 
 </section>
 <!-- /Getting Started Section -->
 
 <!-- Faq Section -->
-<section id="faq">
+<section id="faq" class="py-10">
 
 </section>
 <!-- /Faq Section -->
@@ -259,6 +283,8 @@
     feather.replace()
   </script>
 
+  <!-- Slick Carrousel  -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
